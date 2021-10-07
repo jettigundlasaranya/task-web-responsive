@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/31c8dc48b0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 751px;
+            position: relative;
+        }
+
+        img#backgroundimg {
+            width: 110%;
+            /* z-index: -1; */
+        }
+
+        #textcontent {
+            position: absolute;
+            bottom: 102px;
+            left: 572px;
+            position: right;
+        }
+
+        ul#mainlist {
+            /* border: 2px solid red; */
+            width: 630px;
+            height: 27px;
+        }
+
+        ul#mainlist1 {
+            display: none;
+        }
+
+        li#list1 {
+            float: left;
+            padding: 10px;
+            list-style: none;
+        }
+
+        p#discover {
+            position: relative;
+            top: 166px;
+            right: 586px;
+        }
+
+        h1#dhm {
+            position: relative;
+            top: 166px;
+            right: 588px;
+        }
+
+        p#para {
+            position: relative;
+            top: 185px;
+            right: 585px;
+        }
+
+        button.btn.btn-info {
+            border-radius: 26px;
+            position: relative;
+            top: 224px;
+            right: 583px;
+            color: white;
+        }
+
+        ul#ullist2 {
+            position: relative;
+            top: -55px;
+            right: 17px;
+        }
+
+        li#list2 {
+            text-align: right;
+            direction: rtl;
+            margin-bottom: 24px;
+        }
+
+        li.list123 {
+            text-align: right;
+            direction: rtl;
+            margin-bottom: 24px;
+            margin-right: -20px;
+        }
+
+        img#final {
+            position: relative;
+            top: 9px;
+        }
+
+        section.container {
+            width: 100%;
+            /* border: 2px solid; */
+            height: 521px;
+        }
+
+        div#images {
+            /* border: 2px solid green; */
+            width: 88%;
+            margin-top: 73px;
+            display: flex;
+        }
+
+        div#img1 {
+            width: 25%;
+            margin: 4px;
+            position: relative;
+        }
+
+        div#img3 {
+            width: 25%;
+            margin: 4px;
+            position: relative;
+        }
+
+        div#content1 {
+            position: absolute;
+        }
+
+        div#content2 {
+            position: absolute;
+        }
+
+        div#content3 {
+            position: absolute;
+        }
+
+        div#content4 {
+            position: absolute;
+        }
+
+        img#img11 {
+            width: 100%;
+        }
+
+        img#img22 {
+            width: 100%;
+            position: relative;
+            top: 129px;
+        }
+
+        img#img33 {
+            width: 100%;
+            position: relative;
+            top: 129px;
+        }
+
+        img#img44 {
+            width: 100%;
+            position: relative;
+            top: 129px;
+        }
+
+        ul#ullist3 {
+            position: relative;
+            top: -340px;
+            right: -38px;
+        }
+
+        li#list3 {
+            text-align: right;
+            direction: rtl;
+            margin-bottom: 24px;
+        }
+
+        li.list1234 {
+            text-align: right;
+            direction: rtl;
+            margin-bottom: 24px;
+            margin-right: -20px;
+        }
+
+        p#para1 {
+            position: relative;
+            top: -379px;
+            color: white;
+            left: 172px;
+        }
+
+        h1#head1 {
+            position: relative;
+            top: -104px;
+            color: white;
+            font-size: 19px;
+            left: 23px;
+        }
+
+        p#para2 {
+            position: relative;
+            top: -120px;
+            left: 181px;
+            color: white;
+        }
+
+        p#para4 {
+            position: relative;
+            left: 120px;
+        }
+
+        h1#head2 {
+            top: 9px;
+            font-size: 19px;
+            color: white;
+            position: relative;
+            left: 25px;
+        }
+
+        p#para3 {
+            color: white;
+            position: relative;
+            text-decoration: underline;
+            left: 26px;
+        }
+
+        p#para4 {
+            color: white;
+            position: relative;
+            top: -114px;
+            left: 23px;
+            text-decoration: underline;
+        }
+
+        div#leftright {
+            float: left;
+            position: relative;
+            bottom: 283px;
+        }
+
+        div#rightleft {
+            float: right;
+            position: relative;
+            bottom: 282px;
+            right: 128px;
+        }
+
+        img#left {
+            width: 31%;
+        }
+
+        img#right {
+            width: 31%;
+        }
+
+        img#seeall {
+            width: 31%;
+        }
+
+        /* for tablet */
+
+        @media screen and (min-width : 601px) and (max-width : 992px) {
+            .container {
+                width: 100%;
+                height: 475px;
+                position: relative;
+            }
+
+            img#backgroundimg {
+                width: 110%;
+                /* z-index: -1; */
+            }
+
+            li#list2 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+            }
+
+            ul#mainlist {
+                /* border: 2px solid red; */
+                width: 630px;
+                height: 27px;
+            }
+
+            #textcontent {
+                position: absolute;
+                top: 15px;
+                left: 130px;
+                position: right;
+            }
+
+            p#discover {
+                position: relative;
+                top: 100px;
+                right: 100px;
+            }
+
+            h1#dhm {
+                position: relative;
+                top: 90px;
+                right: 100px;
+            }
+
+            p#para {
+                position: relative;
+                top: 95px;
+                right: 100px;
+                width: 60%;
+                font-size: smaller;
+            }
+
+            button.btn.btn-info {
+                border-radius: 26px;
+                position: relative;
+                top: 120px;
+                right: 85px;
+                color: white;
+            }
+
+            ul#ullist2 {
+                position: relative;
+                top: -150px;
+                right: 30px;
+                font-size: x-small;
+            }
+
+
+
+            li#list2 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+            }
+
+            li.list123 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+                margin-right: -14px;
+            }
+
+            img#final {
+                position: relative;
+                top: -80px;
+                left: 210px;
+            }
+
+
+
+            section.container {
+                width: 100%;
+                /* border: 2px solid; */
+                height: 475px;
+            }
+
+            div#images {
+                /* border: 2px solid green; */
+                width: 88%;
+                margin-top: 30px;
+                display: flex;
+            }
+
+            div#img1 {
+                width: 25%;
+                margin: 4px;
+                position: relative;
+            }
+
+            div#img3 {
+                width: 25%;
+                margin: 4px;
+                position: relative;
+            }
+
+            div#content1 {
+                position: absolute;
+            }
+
+            div#content2 {
+                position: absolute;
+            }
+
+            div#content3 {
+                position: absolute;
+            }
+
+            div#content4 {
+                position: absolute;
+            }
+
+            img#img11 {
+                width: 100%;
+            }
+
+            img#img22 {
+                width: 100%;
+                position: relative;
+                top: 75px;
+            }
+
+            img#img33 {
+                width: 100%;
+                position: relative;
+                top: 75px;
+            }
+
+            img#img44 {
+                width: 100%;
+                position: relative;
+                top: 75px;
+            }
+
+            ul#ullist3 {
+                position: relative;
+                top: -235px;
+                right: -17px;
+                font-size: x-small;
+            }
+
+            li#list3 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+            }
+
+            li.list1234 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+                margin-right: -14px;
+            }
+
+            p#para1 {
+                position: relative;
+                top: -379px;
+                color: white;
+                left: 172px;
+            }
+
+            h1#head1 {
+                position: relative;
+                top: 10px;
+                color: white;
+                font-size: 19px;
+                left: 23px;
+            }
+
+            p#para2 {
+                position: relative;
+                top: 0px;
+                left: 100pxpx;
+                color: white;
+            }
+
+            p#para4 {
+                position: relative;
+                left: 120px;
+            }
+
+            h1#head2 {
+                top: 9px;
+                font-size: 19px;
+                color: white;
+                position: relative;
+                left: 25px;
+            }
+
+            p#para3 {
+                color: white;
+                position: relative;
+                text-decoration: underline;
+                left: 26px;
+            }
+
+            p#para4 {
+                color: white;
+                position: relative;
+                top: -114px;
+                left: 23px;
+                text-decoration: underline;
+            }
+
+            div#leftright {
+                float: left;
+                position: relative;
+                bottom: 250px;
+            }
+
+            div#rightleft {
+                float: right;
+                position: relative;
+                bottom: 250px;
+                right: 128px;
+            }
+
+            img#left {
+                width: 31%;
+            }
+
+            img#right {
+                width: 31%;
+            }
+
+            img#seeall {
+                width: 31%;
+            }
+
+            ul#mainlist1 {
+                display: none;
+            }
+
+        }
+
+
+
+
+
+        /* for mobile */
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                height: 550px;
+                position: relative;
+                padding-top: 20px;
+            }
+
+            img#backgroundimg {
+                width: 161%;
+                position: relative;
+                right: 170px;
+            }
+
+            li#list2 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+            }
+
+            ul#mainlist {
+                display: none;
+            }
+
+            ul#mainlist1 {
+                display: block;
+                width: 570px;
+                position: absolute;
+                height: 27px;
+                top: -10px;
+                left: 172px;
+            }
+
+            #textcontent {
+                position: absolute;
+                top: 15px;
+                left: 130px;
+                width: 100%;
+                position: right;
+            }
+
+            p#discover {
+                position: relative;
+                top: 260px;
+                right: 100px;
+            }
+
+            h1#dhm {
+                position: relative;
+                top: 250px;
+                right: 100px;
+            }
+
+            p#para {
+                position: relative;
+                top: 245px;
+                right: 100px;
+                width: 90%;
+                font-size: smaller;
+            }
+
+            button.btn.btn-info {
+                border-radius: 26px;
+                position: relative;
+                top: 215px;
+                right: 100px;
+                color: white;
+            }
+
+            ul#ullist2 {
+                display: none;
+            }
+
+
+
+            li#list2 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+            }
+
+            li.list123 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+                margin-right: -14px;
+            }
+
+            img#final {
+                position: relative;
+                top: -80px;
+                left: 210px;
+            }
+
+
+
+            section.container {
+                width: 100%;
+                /* border: 2px solid; */
+                height: 250px;
+            }
+
+            div#images {
+                /* border: 2px solid green; */
+                width: 88%;
+                margin-top: 30px;
+                display: flex;
+            }
+
+            div#img1 {
+                width: 25%;
+                margin: 4px;
+                position: relative;
+            }
+
+            div#img3 {
+                width: 25%;
+                margin: 4px;
+                position: relative;
+            }
+
+            div#content1 {
+                position: absolute;
+            }
+
+            div#content2 {
+                position: absolute;
+            }
+
+            div#content3 {
+                position: absolute;
+            }
+
+            div#content4 {
+                position: absolute;
+            }
+
+            img#img11 {
+                width: 100%;
+            }
+
+            img#img22 {
+                width: 100%;
+                position: relative;
+                top: 35px;
+            }
+
+            img#img33 {
+                width: 100%;
+                position: relative;
+                top: 35px;
+            }
+
+            img#img44 {
+                width: 100%;
+                position: relative;
+                top: 35px;
+            }
+
+            ul#ullist3 {
+                display: none;
+            }
+
+            /* li#list3 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+            } */
+
+            li.list1234 {
+                text-align: right;
+                direction: rtl;
+                margin-bottom: 10px;
+                margin-right: -14px;
+            }
+
+            p#para1 {
+                position: relative;
+                top: -379px;
+                color: white;
+                left: 172px;
+            }
+
+            h1#head1 {
+                position: relative;
+                top: 10px;
+                color: white;
+                font-size: 19px;
+                left: 23px;
+            }
+
+            p#para2 {
+                position: relative;
+                top: 0px;
+                left: 100pxpx;
+                color: white;
+            }
+
+            p#para4 {
+                position: relative;
+                left: 120px;
+            }
+
+            h1#head2 {
+                top: 9px;
+                font-size: 19px;
+                color: white;
+                position: relative;
+                left: 25px;
+            }
+
+            p#para3 {
+                color: white;
+                position: relative;
+                text-decoration: underline;
+                left: 26px;
+            }
+
+            p#para4 {
+                color: white;
+                position: relative;
+                top: -114px;
+                left: 23px;
+                text-decoration: underline;
+            }
+
+            div#leftright {
+                float: left;
+                position: relative;
+                bottom: 0px;
+            }
+
+            div#rightleft {
+                float: right;
+                position: relative;
+                bottom: 0px;
+                right: 0px;
+            }
+
+            img#left {
+                width: 31%;
+            }
+
+            img#right {
+                width: 31%;
+            }
+
+            img#seeall {
+                width: 31%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <img src="Images/back.png" alt="" id="backgroundimg">
+        <div id="textcontent">
+            <ul id="mainlist">
+                <li id="list1">WHAT'S NEW</li>
+                <li id="list1">PLAN A VISIT</li>
+                <li id="list1">MALL MAP</li>
+                <li id="list1">SERVICES</li>
+                <li id="list1">LEASING</li>
+                <li id="list1"><i class="fas fa-search"></i></li>
+                <li id="list1">العربية</li>
+            </ul>
+            <ul id="mainlist1">
+                <li id="search"><i class="fas fa-search"></i></li>
+            </ul>
+            <p id="discover">D I S C O V E R</p>
+            <h1 id="dhm">DUBAI HILLS MALL</h1>
+            <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.</p>
+            <br>
+            <button class="btn btn-info">Know More</button>
+            <ul id="ullist2">
+                <li class="list123" style="color: aqua; list-style: none;">|&nbsp; &nbsp;DH MALL</li>
+                <li id="list2">SHOP</li>
+                <li id="list2">DINE</li>
+                <li id="list2">ENTERTAIN </li>
+                <li id="list2">OFFERS</li>
+                <li id="list2">LOYALITY PROGRAM</li>
+            </ul>
+            <img src="Images/loading.png" alt="" id="final">
+        </div>
+    </header>
+    <section class="container">
+        <h1 id="ourshop">OUR TOP SHOPS</h1>
+        <div id="images">
+            <div id="img1">
+                <img src="Images/girls.png" alt="" id="img11">
+                <div id="content1">
+                    <p id="para1">ARKET</p>
+                    <h1 id="head1">ARKET</h1>
+                    <p id="para4">View Location</p>
+                </div>
+            </div>
+            <div id="img1">
+                <img src="Images/girl.png" alt="" id="img22">
+                <div id="content2">
+                    <p id="para2">COS</p>
+                    <h1 id="head2">COS</h1>
+                    <p id="para3">View Location</p>
+                </div>
+            </div>
+            <div id="img3">
+                <img src="Images/boy.png" alt="" id="img33">
+                <div id="content3">
+                    <p id="para2"></p>
+                    <h1 id="head2">ADIDAS</h1>
+                    <p id="para3">View Location</p>
+                </div>
+            </div>
+            <div id="img1">
+                <img src="Images/gray.png" alt="" id="img44">
+                <div id="content4">
+                    <p id="para4">organic basics</p>
+                    <h1 id="head2">ORGANIC BASICS</h1>
+                    <p id="para3">View Location</p>
+                </div>
+            </div>
+            <!-- <ul id="ullist3">
+        <li  id="list3" >DH MALL</li>
+        <li class="list1234" style="color: aqua; list-style: none;">|&nbsp; &nbsp;SHOP</li>
+        <li id="list3">DINE</li>
+        <li id="list3">ENTERTAIN </li>
+        <li id="list3">OFFERS</li>
+        <li id="list3">LOYALITY PROGRAM</li>
+    </ul>  -->
+        </div>
+        <ul id="ullist3">
+            <li id="list3">DH MALL</li>
+            <li class="list1234" style="color: aqua; list-style: none;">|&nbsp; &nbsp;SHOP</li>
+            <li id="list3">DINE</li>
+            <li id="list3">ENTERTAIN </li>
+            <li id="list3">OFFERS</li>
+            <li id="list3">LOYALITY PROGRAM</li>
+        </ul>
+        <div id="leftright">
+            <img src="Images/left.png" alt="" id="left">
+            <img src="Images/right.png" alt="" id="right">
+        </div>
+        <div id="rightleft">
+            <p>See all <img src="Images/right.png" alt="" id="seeall"></p>
+        </div>
+    </section>
+</body>
+
+</html>
